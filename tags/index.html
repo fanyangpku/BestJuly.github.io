@@ -80,12 +80,13 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-10-08T12:16:57.942Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="tags">
 
 
 
@@ -115,13 +116,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>tags | Hexo</title>
   
 
 
@@ -140,8 +141,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,149 +224,37 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/08/Create-your-blog-on-github-by-Hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="BestJuly">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/08/Create-your-blog-on-github-by-Hexo/" itemprop="url">Create your blog on github by Hexo</a></h1>
-        
+	<h1 class="post-title" itemprop="name headline">tags</h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-08T19:24:32+08:00">
-                2017-10-08
-              </time>
-            
 
-            
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
       
-
       
+      <div class="post-body">
+        
         
           
-            <blockquote>
-<p>reference: <a href="http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/" target="_blank" rel="external">http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/</a></p>
-</blockquote>
-<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><ul>
-<li>Platform: Windows 10 for this doc.</li>
-<li><a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a></li>
-<li><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
-<li>hexo: <code>npm install -g hexo</code></li>
-</ul>
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><h4 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd $YOUR_PATH</div><div class="line">mkdir hexo</div><div class="line">cd hexo</div><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
-<p>If you want to see the website on local computer, the following code will help you.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
-<p>After that, you can review your website on <code>localhost:4000</code></p>
-<h4 id="Github-settings"><a href="#Github-settings" class="headerlink" title="Github settings"></a>Github settings</h4><ol>
-<li>Create a repository named yourname.github.io</li>
-<li>Add deploy settings in <code>_config.yml</code>, an example is shown as follows.<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:BestJuly/BestJuly.github.io</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h4 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<p>If you have the problem: <code>Deployer not found: git</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
-
-          
         
+      </div>
+      
+      
       
     </div>
     
     
     
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -374,6 +262,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -585,6 +477,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
