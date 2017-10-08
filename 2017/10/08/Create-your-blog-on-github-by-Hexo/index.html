@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="reference: http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/  Requirements Platform: Windows 10 for this doc. Git Node.js hexo: npm install -g hexo  HexoInitialize12345cd $YOUR_PATHmkdir hexocd hex">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-10-08T11:25:10.652Z">
+<meta property="og:updated_time" content="2017-10-08T12:39:54.939Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Create your blog on github by Hexo">
 <meta name="twitter:description" content="reference: http://wuxiaolong.me/2015/07/31/build-blog-by-hexo/  Requirements Platform: Windows 10 for this doc. Git Node.js hexo: npm install -g hexo  HexoInitialize12345cd $YOUR_PATHmkdir hexocd hex">
@@ -190,16 +190,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -247,7 +237,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="BestJuly">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/momokuri.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -318,16 +308,16 @@
 <li><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
 <li>hexo: <code>npm install -g hexo</code></li>
 </ul>
-<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><h4 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cd $YOUR_PATH</div><div class="line">mkdir hexo</div><div class="line">cd hexo</div><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
-<p>If you want to see the website on local computer, the following code will help you.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><h4 id="Initialize"><a href="#Initialize" class="headerlink" title="Initialize"></a>Initialize</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> <span class="variable">$YOUR_PATH</span></div><div class="line">mkdir hexo</div><div class="line"><span class="built_in">cd</span> hexo</div><div class="line">hexo init</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>If you want to see the website on local computer, the following code will help you.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo server</div></pre></td></tr></table></figure></p>
 <p>After that, you can review your website on <code>localhost:4000</code></p>
 <h4 id="Github-settings"><a href="#Github-settings" class="headerlink" title="Github settings"></a>Github settings</h4><ol>
 <li>Create a repository named yourname.github.io</li>
 <li>Add deploy settings in <code>_config.yml</code>, an example is shown as follows.<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:BestJuly/BestJuly.github.io</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">master</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h4 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
-<p>If you have the problem: <code>Deployer not found: git</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
+<h4 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<p>If you have the problem: <code>Deployer not found: git</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -411,7 +401,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
+                src="/images/momokuri.jpg"
                 alt="BestJuly" />
             
               <p class="site-author-name" itemprop="name">BestJuly</p>
@@ -445,13 +435,13 @@
                 <span class="links-of-author-item">
                   <a href="https://github.com/BestJuly" target="_blank" title="GitHub">
                     
-                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                      <i class="fa fa-fw fa-github"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   <a href="chntaoli@gmail.com" target="_blank" title="E-Mail">
                     
-                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                      <i class="fa fa-fw fa-envelope"></i></a>
                 </span>
               
             
