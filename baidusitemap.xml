@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/10/08/Create-your-blog-on-github-by-Hexo/</loc>
+    <lastmod>2017-10-10T05:09:57.497Z</lastmod>
+    <data>
+        <display>
+        <title>Create your blog on github by Hexo</title>
+        <pubTime>2017-10-08T11:24:32.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+             
+              <breadCrumb title="Tech" url="http://yoursite.com/categories/Tech/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
