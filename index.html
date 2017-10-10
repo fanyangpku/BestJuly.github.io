@@ -258,6 +258,176 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/10/You-take-THE-photos/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BestJuly">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/momokuri.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DeepThoughts">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/10/You-take-THE-photos/" itemprop="url">You take THE photos</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-10T13:46:34+08:00">
+                2017-10-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index">
+                    <span itemprop="name">Tech</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Samples"><a href="#Samples" class="headerlink" title="Samples"></a>Samples</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">input</th>
+<th style="text-align:center">mask</th>
+<th style="text-align:center">output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="http://oxlfstmvz.bkt.clouddn.com/test.jpg" width="300"></td>
+<td style="text-align:center"><img src="http://oxlfstmvz.bkt.clouddn.com/python_generate_ngzk.png" width="300"></td>
+<td style="text-align:center"><img src="http://oxlfstmvz.bkt.clouddn.com/python_generate_output.jpg" width="300"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Merge-two-picutres"><a href="#Merge-two-picutres" class="headerlink" title="Merge two picutres"></a>Merge two picutres</h3><p>This code will help you to merge two pictures.<br>One image is in PNG form, and the other is in JPEG form. The PNG image has 4 channels, rgba, and the JPEG image only has 3 channels, rgb. By merging them together and you can get the final result, which seems to be taken by you.</p>
+<p><strong>requirements</strong></p>
+<ul>
+<li>python</li>
+</ul>
+<h4 id="workflow"><a href="#workflow" class="headerlink" title="workflow"></a>workflow</h4><ol>
+<li>read the PNG image <code>Im</code> and get rgba data;</li>
+<li>read the JPEG image as <code>I</code> and get rgb data;</li>
+<li>resize <code>I</code> to <code>I&#39;</code>, which is the smaller one as shown above;</li>
+<li>blur the image <code>I</code> using gaussian kernel;</li>
+<li>merge those images together according to the alpha channel data of <code>Im</code></li>
+</ol>
+<h4 id="code"><a href="#code" class="headerlink" title="code"></a>code</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/python</span></div><div class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></div><div class="line"></div><div class="line"><span class="keyword">import</span> pdb</div><div class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image, ImageFilter</div><div class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"></div><div class="line">im = Image.open(<span class="string">'ngzk.png'</span>) <span class="comment"># r,g,b,a</span></div><div class="line">height = im.size[<span class="number">0</span>]</div><div class="line">width = im.size[<span class="number">1</span>]</div><div class="line">r,g,b,a = im.split()</div><div class="line">pic = Image.open(<span class="string">'test.jpg'</span>)</div><div class="line"></div><div class="line">pic_b = pic.resize((height,width))</div><div class="line">pic_b = pic_b.filter(ImageFilter.GaussianBlur(radius=<span class="number">7</span>))</div><div class="line">pic_s = pic.resize((<span class="number">268</span>,<span class="number">465</span>))</div><div class="line">pic_b.paste(pic_s,(<span class="number">196</span>,<span class="number">673</span>))</div><div class="line"><span class="comment"># pic_b.show()</span></div><div class="line"></div><div class="line">im = np.array(im)</div><div class="line">pic_b = np.array(pic_b)</div><div class="line">max_a = <span class="number">0</span></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(width):</div><div class="line">  <span class="keyword">for</span> j <span class="keyword">in</span> range(height):</div><div class="line">    p = <span class="number">1.0</span>*im[i,j][<span class="number">3</span>]/<span class="number">255</span></div><div class="line">    q = <span class="number">1</span>-p</div><div class="line">    pic_b[i,j][<span class="number">0</span>] =im[i,j][<span class="number">0</span>] * p + pic_b[i,j][<span class="number">0</span>] * q</div><div class="line">    pic_b[i,j][<span class="number">1</span>] =im[i,j][<span class="number">1</span>] * p + pic_b[i,j][<span class="number">1</span>] * q</div><div class="line">    pic_b[i,j][<span class="number">2</span>] =im[i,j][<span class="number">2</span>] * p + pic_b[i,j][<span class="number">2</span>] * q</div><div class="line">outim = Image.fromarray(pic_b)</div><div class="line"><span class="comment">#outim.show()</span></div><div class="line">outim.save(<span class="string">'out.jpg'</span>)</div></pre></td></tr></table></figure>
+<p>Notice that this is <strong>the simplest version</strong>. You can modify this code so that the parameters can be read from the command console or package them to a execuate file.</p>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/08/Create-your-blog-on-github-by-Hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -452,7 +622,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -474,7 +644,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
