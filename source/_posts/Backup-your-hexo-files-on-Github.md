@@ -11,7 +11,7 @@ Since you have create your website using github. Here is the way that you **back
 ### Steps
 1. clone your github repository  
 ```
-git clone git@github.com:BestJuly/BestJulyk.github.io.git
+git clone git@github.com:BestJuly/BestJuly.github.io.git
 ```
 2. create a new branch named `hexo` and copy files here   
 ```
