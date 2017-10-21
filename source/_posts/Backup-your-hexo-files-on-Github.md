@@ -40,11 +40,11 @@ git checkout hexo
 ```
 
 2. install necessary things
+install [Node.js](https://nodejs.org/en/)
 ```
 npm install hexo
 npm install
-npm install 
-hexo-deployer-git
+npm install hexo-deployer-git
 ```
 
 3. Edit your files
