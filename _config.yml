@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: DeepThoughts
-subtitle: Think deeply and take action.
+title: Fan Yang
+subtitle: Peking University
 description: 
-author: BestJuly
+author: Fan Yang
 language: en
 timezone: Asia/Shanghai
 
@@ -78,5 +78,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:BestJuly/BestJuly.github.io
+  repo: git@github.com:fanyangpku/fanyangpku.github.io
   branch: master
