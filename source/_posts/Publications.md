@@ -6,7 +6,7 @@ tags:
 - CV
 ---
 ### 2016
-**Structure preserving single image super-resolution**
+**Structure Preserving Single Image Super-Resolution**
 
 **Fan Yang**, Don Xie, Huizhu Jia, Rui Chen, Guoqing Xiang and Wen Gao
 

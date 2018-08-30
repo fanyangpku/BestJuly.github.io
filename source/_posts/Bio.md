@@ -19,5 +19,5 @@ tags:
 
 ### Education
 * B.S. in Computer Science, Harbin Institute of Technology, 2014
-* 
+
 * Phd Candidate in Computer Science, Peking University, 2014 - Present
