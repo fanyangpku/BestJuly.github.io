@@ -10,7 +10,7 @@ tags:
 
 **Fan Yang**, Ke Yan, Shijian Lu, Huizhu Jia, Xiaodong Xie, and Wen Gao
 
-Pattern Recogintion (PR)
+[Pattern Recogintion (PR)](https://doi.org/10.1016/j.patcog.2018.08.015)
 
 **Trajectory Factory: Tracklet Cleaving and Re-connection by Deep Siamese Bi-GRU for Multiple Object Tracking**
 
