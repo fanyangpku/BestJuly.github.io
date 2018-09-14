@@ -24,7 +24,7 @@ IEEE International Conference on Multimedia and Expo (ICME) 2018, (Oral)
 
 Yueqing Zhuang, **Fan Yang**, Li Tao, Cong Ma, Ziwei Zhang, Yuan Li, Huizhu Jia∗, Xiaodong Xie, Wen Gao
 
-2018 IEEE International Conference on Image Processing (ICIP)
+[2018 IEEE International Conference on Image Processing (ICIP)](https://ieeexplore.ieee.org/document/8451830/)
 
 **RelationNet: Learning Deep-Aligned Representation for Semantic Image Segmentation**
 
@@ -37,14 +37,14 @@ International Conference on Pattern Recognition (ICPR 2018)
 
 **Fan Yang**, Huizhu Jia, Don Xie, Rui Chen, and Wen Gao
 
-2017 Proceedings of The Pacific-Rim Conference on Multimedia (PCM)
+[2017 Proceedings of The Pacific-Rim Conference on Multimedia (PCM)](https://link.springer.com/chapter/10.1007/978-3-319-77383-4_81)
 
 ### 2016
 **Structure Preserving Single Image Super-Resolution**
 
 **Fan Yang**, Don Xie, Huizhu Jia, Rui Chen, Guoqing Xiang and Wen Gao
 
-2016 IEEE International Conference on Image Processing (ICIP), (Oral)
+[2016 IEEE International Conference on Image Processing (ICIP), (Oral)](https://ieeexplore.ieee.org/document/7532590/)
 
 [ResearchGate](https://www.researchgate.net/publication/307174368_Structure_Preserving_Single_Image_Super-Resolution)
 
