@@ -10,15 +10,13 @@ tags:
 
 **Fan Yang**, Ke Yan, Shijian Lu, Huizhu Jia, Xiaodong Xie, and Wen Gao
 
-[Pattern Recogintion (PR)](https://doi.org/10.1016/j.patcog.2018.08.015)
+[Pattern Recogintion (PR)](https://doi.org/10.1016/j.patcog.2018.08.015) &nbsp; [arXiv](https://arxiv.org/abs/1810.05866)
 
 **Trajectory Factory: Tracklet Cleaving and Re-connection by Deep Siamese Bi-GRU for Multiple Object Tracking**
 
 Cong Ma, Changshui Yang, **Fan Yang**, Yueqing Zhuang, Ziwei Zhang, Huizhu Jia, Xiaodong Xie
 
-IEEE International Conference on Multimedia and Expo (ICME) 2018, (Oral)
-
-[arXiv](https://arxiv.org/abs/1804.04555)
+[IEEE International Conference on Multimedia and Expo (ICME) 2018, Oral](https://ieeexplore.ieee.org/document/8486454) &nbsp; [arXiv](https://arxiv.org/abs/1804.04555)
 
 **Dense Relation Network: Learning Consistent and Context-Aware Representation For Semantic Image Segmentation**
 
@@ -44,9 +42,7 @@ International Conference on Pattern Recognition (ICPR 2018)
 
 **Fan Yang**, Don Xie, Huizhu Jia, Rui Chen, Guoqing Xiang and Wen Gao
 
-[2016 IEEE International Conference on Image Processing (ICIP), (Oral)](https://ieeexplore.ieee.org/document/7532590/)
-
-[ResearchGate](https://www.researchgate.net/publication/307174368_Structure_Preserving_Single_Image_Super-Resolution)
+[2016 IEEE International Conference on Image Processing (ICIP), Oral](https://ieeexplore.ieee.org/document/7532590/) &nbsp; [ResearchGate](https://www.researchgate.net/publication/307174368_Structure_Preserving_Single_Image_Super-Resolution)
 
 
 
