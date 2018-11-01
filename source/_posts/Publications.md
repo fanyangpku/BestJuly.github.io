@@ -1,6 +1,6 @@
 ---
 title: Publications
-date: 2017-10-28 23:00:00
+date: 2018-10-20 23:00:00
 categories: Resume
 tags:
 - CV
